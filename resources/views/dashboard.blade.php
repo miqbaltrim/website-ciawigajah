@@ -7,16 +7,16 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white bg-blue-500 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-gray-800 bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
             <div class="container" style="margin-top: 50px;">
             <div class="flex justify-center">
-  <p class="text-center dark:text-white text-black">Laravel CRUD With Multiple Image Upload</p>
+  <p class="text-center dark:text-white text-black"></p>
 </div>
 
 
 <a href="/create" class="bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded">Add New Post</a>
 
-<table class="min-w-full border divide-y divide-gray-200">
+<table class="table-auto min-w-full border divide-y divide-gray-200">
   <thead>
     <tr>
       <th scope="col" class="px-4 py-2 bg-gray-200">Nomor</th>
@@ -84,7 +84,7 @@
     </tbody>
   </table> -->
 </div>
-<form method="POST" action="{{ route('logout') }}">
+<!-- <form method="POST" action="{{ route('logout') }}">
                 @csrf
 
                 <a class="text-center bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded" :href="route('logout')"
@@ -92,7 +92,7 @@
                                     this.closest('form').submit();">
                     {{ __('Log Out') }}
                 </a>
-            </form>
+            </form> -->
             </div>
         </div>
     </div>
