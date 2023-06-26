@@ -14,21 +14,20 @@
     <body class="bg-gray-800">
 
         <div class="container mx-auto mt-10">
-            <div class="bg-fixed ..." style="background-image: url(...)"></div>
             <div class="flex justify-center">
                 <div class="w-2/3">
 
                     <h3 class="text-center text-red-500 font-bold text-lg mb-4">Add New Post</h3>
-                    <div class="bg-white shadow rounded p-4">
+                    <div class="bg-blue-600 shadow rounded p-4">
                         <form action="/post" method="post" enctype="multipart/form-data" class="flex flex-col">
                             @csrf
-                            <input type="text" name="title" class="form-control mb-2 p-2 border border-gray-300 rounded w-full" placeholder="Title">
-                            <input type="text" name="author" class="form-control mb-2 p-2 border border-gray-300 rounded w-full" placeholder="Author">
-                            <textarea name="body" cols="20" rows="4" class="form-control mb-2 p-2 border border-gray-300 rounded w-full" placeholder="Body"></textarea>
+                            <input type="text" name="title" class="form-control mb-2 p-2 border border-black rounded w-full" placeholder="Title">
+                            <input type="text" name="author" class="form-control mb-2 p-2 border border-black rounded w-full" placeholder="Author">
+                            <textarea name="body" cols="20" rows="4" class="form-control mb-2 p-2 border border-black rounded w-full" placeholder="Body"></textarea>
                             <label class="mb-2">Cover Image</label>
-                            <input type="file" id="input-file-now-custom-3" class="form-control mb-2 p-2 border border-gray-300 rounded" name="cover">
+                            <input type="file" id="input-file-now-custom-3" class="form-control mb-2 p-2 border border-black rounded" name="cover">
                             <label class="mb-2">Images</label>
-                            <input type="file" id="input-file-now-custom-3" class="form-control mb-2 p-2 border border-gray-300 rounded" name="images[]" multiple>
+                            <input type="file" id="input-file-now-custom-3" class="form-control mb-2 p-2 border border-black rounded" name="images[]" multiple>
                             <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Submit</button>
                         </form>
                     </div>
