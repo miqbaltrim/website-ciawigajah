@@ -30,7 +30,7 @@
   <tbody>
   @foreach ($posts as $post)
     <tr >
-      <td class="px-4 py-2 dark:text-white text-black">{{ $post->id }}</td>
+      <td class="px-4 py-2 dark:text-black text-black">{{ $post->id }}</td>
       <td class="px-4 py-2 dark:text-white text-black">{{ $post->title }}</td>
       <td class="px-4 py-2 dark:text-white text-black">{{ $post->author }}</td>
       <td class="px-4 py-2 dark:text-white text-black">{{ $post->body }}</td>
