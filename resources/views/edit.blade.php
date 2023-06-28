@@ -46,7 +46,7 @@
 
 
                 <div class="col-lg-6">
-                    <h3 class="text-center text-danger"><b>Udate Post</b> </h3>
+                    <h3 class="text-center text-danger"><b>Update Post</b> </h3>
 				    <div class="form-group">
                         <form action="/update/{{ $posts->id }}" method="post" enctype="multipart/form-data">
                             @csrf

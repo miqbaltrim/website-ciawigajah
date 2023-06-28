@@ -38,5 +38,7 @@ Route::get('/create',function(){
     Route::delete('/deletecover/{id}',[PostController::class,'deletecover']);
     
     Route::put('/update/{id}',[PostController::class,'update']);
+
+
     
 require __DIR__.'/auth.php';
