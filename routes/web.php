@@ -15,6 +15,7 @@ use App\Models\Post;
 |
 */
 
+// route buat nampilin judul di halaman depan
 Route::get('/', function () {
     $posts= Post::all();
     return view('welcome', ["post"=>$posts]);
