@@ -15,87 +15,6 @@
 
                     <a href="/create" class="bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded">Add New Post</a>
 
-<<<<<<< HEAD
-<a href="/create" class="bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded">Add New Post</a>
-
-<table class="min-w-full border divide-y divide-gray-200">
-  <thead>
-    <tr>
-      <th scope="col" class="px-4 py-2 bg-gray-200">Nomor</th>
-      <th scope="col" class="px-4 py-2 bg-gray-200">Title</th>
-      <th scope="col" class="px-4 py-2 bg-gray-200">Author</th>
-      <th scope="col" class="px-4 py-2 bg-gray-200">Content</th>
-      <th scope="col" class="px-4 py-2 bg-gray-200">Cover</th>  
-      <th scope="col" class="px-4 py-2 bg-gray-200">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-  @foreach ($posts as $post)
-    <tr >
-      <td class="px-4 py-2 dark:text-black text-black">{{ $post->id }}</td>
-      <td class="px-4 py-2 dark:text-white text-black">{{ $post->title }}</td>
-      <td class="px-4 py-2 dark:text-white text-black">{{ $post->author }}</td>
-      <td class="px-4 py-2 dark:text-white text-black">{{ $post->body }}</td>
-      <td class="px-4 py-2 dark:text-white text-black"><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
-      <td class="px-4 py-2 dark:text-white text-black"><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Update</a></td>
-      <td class="px-4 py-2 dark:text-white text-black"><form action="/delete/{{ $post->id }}" method="post">
-                <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
-                @csrf
-                @method('delete')
-            </form></td>
-    </tr>
-    @endforeach 
-
-  </tbody>
-</table>
-
-<!-- <table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Description</th>
-        <th>Cover</th>
-        <th>Update</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody>
-
-
-        @foreach ($posts as $post)
-     <tr>
-           <th scope="row">{{ $post->id }}</th>
-           <td>{{ $post->title }}</td>
-           <td>{{ $post->author }}</td>
-           <td>{{ $post->body }}</td>
-           <td><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
-           <td><a href="/edit/{{ $post->id }}" class="btn btn-outline-primary">Update</a></td>
-           <td>
-               <form action="/delete/{{ $post->id }}" method="post">
-                <button class="btn btn-outline-danger" onclick="return confirm('Are you sure?');" type="submit">Delete</button>
-                @csrf
-                @method('delete')
-            </form>
-           </td>
-
-       </tr>
-       @endforeach
-
-    </tbody>
-  </table> -->
-</div>
-<form method="POST" action="{{ route('logout') }}">
-                @csrf
-
-                <a class="text-center bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded" :href="route('logout')"
-                        onclick="event.preventDefault();
-                                    this.closest('form').submit();">
-                    {{ __('Log Out') }}
-                </a>
-            </form>
-=======
                     <table class="table-auto min-w-full border divide-y divide-gray-200 mt-4">
                         <thead>
                             <tr>
@@ -128,7 +47,6 @@
                         </tbody>
                     </table>
                 </div>
->>>>>>> b56f953f55d7790a831354c8f5e186fe9e1fbec0
             </div>
         </div>
     </div>
