@@ -20,7 +20,16 @@ class PostController extends Controller
         return view('dashboard')->with('posts',$posts);
     }
 
+<<<<<<< HEAD
     
+=======
+    public function readmore($post)
+    {
+        $posting=Post::where('id',$post)->first();
+
+        return view('readmore', compact('posting'));
+    }
+>>>>>>> 2bb1975f2c902e14a694684a834a44799f274e89
     /**
      * Show the form for creating a new resource.
      *
