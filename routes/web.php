@@ -21,6 +21,8 @@ Route::get('/', function () {
     return view('welcome', ["post"=>$posts]);
 });
 
+Route::get('/blog/{post}', [PostController::class,'readmore'])->name('readmore');
+
 Route::get('/dashboard', [PostController::class,'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
