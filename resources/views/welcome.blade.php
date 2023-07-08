@@ -157,8 +157,8 @@
             @foreach($post as $item)
             <div class="p-6">
                 
-                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="/cover/".{{asset($item->cover)}} alt="blog">
-                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{{$item->title}}</h1>
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="cover/{{ $item->cover }}" alt="blog">
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{{$item->title}} </h1>
                 <p class="mx-auto text-base leading-relaxed text-gray-500">
                 {{$item->body}}</p>                
                 <div class="mt-4">
