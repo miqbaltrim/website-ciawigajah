@@ -1,3 +1,5 @@
+<link rel="icon" type="image/svg+xml" href="/images/Ried-favicon.svg">
+<title>Baca RIED</title>
 <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf

@@ -1,13 +1,16 @@
+<link rel="icon" type="image/svg+xml" href="/images/Ried-favicon.svg">
+
+<title>Baca RIED</title>
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('Dashboard Konten Blog') }}
         </h2>
     </x-slot>
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-gray-800 bg-gray-200 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-gray-800  overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="container mx-auto mt-8">
                     <div class="flex justify-center mb-4">
                         <p class="text-center dark:text-white text-black"></p>
@@ -32,7 +35,7 @@
                                 <td class="px-4 py-2 dark:text-white text-black">{{ $post->id }}</td>
                                 <td class="px-4 py-2 dark:text-white text-black">{{ $post->title }}</td>
                                 <td class="px-4 py-2 dark:text-white text-black">{{ $post->author }}</td>
-                                <td class="px-4 py-2 dark:text-white text-black">{{ $post->body }}</td>
+                                <td class="px-4 py-2 dark:text-white text-black">{{ Str::limit($post->body, 100) }}</td>
                                 <td class="px-4 py-2 dark:text-white text-black"><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
                                 <td class="px-4 py-2 dark:text-white text-black">
                                     <a href="/edit/{{ $post->id }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</a>
@@ -46,6 +49,9 @@
                             @endforeach
                         </tbody>
                     </table>
+                </div>
+                <div class=" flex justify-center">
+                    {{ $posts->onEachSide(1)->links('pagination::bootstrap-4')->withClass('pagination-lg') }}
                 </div>
             </div>
         </div>

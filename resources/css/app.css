@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 10s linear infinite;
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 3px;
+}
+
+.pagination li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+.pagination li a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
