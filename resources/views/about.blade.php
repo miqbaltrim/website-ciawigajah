@@ -31,7 +31,7 @@
                 <!-- Teks Header -->
                 <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
                     <h2 class="text-5xl font-bold tracking-wide text-blue-500 dark:text-gray-300">
-                        About Aplikasi
+                        About <span><a href="https://docs.google.com/presentation/d/1_jT1cJsGrbyGe_CJ-d5nnYQpmleD-r7fNWv7qCGnX0Y/edit?usp=sharing" target="_blank" class="hover:underline">Aplikasi</a></span>
                     </h2>
                     <p class="paragraph mb-2 mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
                         Saat ini sering kali kita mendengar mengenai teknologi internet yang merupakan perkembangan terkini dari teknologi informasi. Perkembangan teknologi ini, lebih banyak berkembang kearah user friendly, yang mana berarti semakin mempermudah para pengguna dalam mengimplementasikan internet dalam berkehidupan.
@@ -75,7 +75,7 @@
             <!-- Dokumentasi -->
             <div class="min-h-screen bg-gradient-to-br ">
                 <div class="mx-auto max-w-3xl px-6 py-12 text-center ">
-                    <a href="/documents/Laporan-Jurnal-UAS.pdf" target="_blank" class="ml-2 text-5xl font-bold tracking-wide mb-8 text-blue-500 hover:underline">Dokumentasi</a>
+                    <a href="/documents/Laporan-Jurnal.pdf" target="_blank" class="ml-2 text-5xl font-bold tracking-wide mb-8 text-blue-500 hover:underline">Dokumentasi</a>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
                         <div class="bg-white rounded-lg shadow-md p-6">
                             <h2 class="text-xl font-bold text-purple-900 mb-4">Diskusi via Discord</h2>

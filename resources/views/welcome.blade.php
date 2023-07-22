@@ -183,7 +183,7 @@
         </div>
         </div>
         <div class="space-y-2 text-sm">
-        <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+        <p class="text-base font-bold tracking-wide text-gray-900">Nama Kelompok - NIM</p>
         <div class="flex">
             <a href="/" title="Muhammad Iqbal Tri Mulyono" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">Muhammad Iqbal Tri Mulyono - 200511153</a>
         </div>
