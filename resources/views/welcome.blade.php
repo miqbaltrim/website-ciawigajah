@@ -26,7 +26,7 @@
                     transform: translateX(-100%);
                 }
             }
-
+            /*Animasi CSS Marque*/
             .animate-marquee {
                 display: inline-block;
                 white-space: nowrap;
@@ -91,6 +91,7 @@
                                 </p>
                             </div>
                         </div>
+                        
                         <!-- Konten Berita -->
                         <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
                             @foreach($post as $item)
@@ -199,7 +200,7 @@
         <div>
         <span class="text-base font-bold tracking-wide text-gray-900">Our Project</span>
         <div class="flex items-center mt-1 space-x-3">
-            <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+            <a href="https://github.com/rakun17/tugas-uas" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
             <!-- Github -->
                 <svg
                 xmlns="http://www.w3.org/2000/svg"

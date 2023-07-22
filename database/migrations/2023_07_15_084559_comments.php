@@ -4,17 +4,15 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCommentsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('comments', function (Blueprint $table) {
-            $table->id();
+        $table->id();
             $table->string('name');
             $table->text('body');
             $table->unsignedBigInteger('post_id');
@@ -26,21 +24,9 @@ class CreateCommentsTable extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('comments');
+        //
     }
-
-    use Illuminate\Support\Facades\Schema;
-
-    public function boot()
-    {
-        Schema::defaultStringLength(191);
-        date_default_timezone_set('Asia/Jakarta');
-    }
-
-}
-
+};

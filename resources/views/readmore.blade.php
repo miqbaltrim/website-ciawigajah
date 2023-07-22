@@ -71,7 +71,7 @@
           @endif
         @endforeach
             <!-- Button Share -->
-            <button class="text-blue-500 hover:text-blue-700 focus:outline-none" onclick="copyLink('{{ route('post.show', $posting->id) }}')">
+            <button class="text-blue-500 hover:text-blue-700 focus:outline-none" onclick="copyLink('{{ route('readmore', $posting->id) }}')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mt-4">
                     <path fill-rule="evenodd" d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z" clip-rule="evenodd" />
                 </svg>
@@ -85,10 +85,10 @@
         </div>
 
         <!-- Modal Copy Link -->
-        <div id="modal" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 hidden">
+        <div id="modal" class="fixed inset-0  items-center justify-center bg-gray-900 bg-opacity-75 hidden">
             <div class="bg-white rounded-lg p-6 ">
                 <h2 class="text-xl font-bold mb-4">Link Sudah Tercopy!</h2>
-                <p class="text-gray-700">{{ route('post.show', $posting->id) }}</p>
+                <p class="text-gray-700">{{ route('readmore', $posting->id) }}</p>
                 <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md" onclick="closeModal()">Close</button>
             </div>
         </div>
@@ -156,7 +156,7 @@
     <div>
       <span class="text-base font-bold tracking-wide text-gray-900">Our Project</span>
       <div class="flex items-center mt-1 space-x-3">
-        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+        <a href="https://github.com/rakun17/tugas-uas" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
           <!-- Github -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -187,6 +187,7 @@
 
 <!-- Function Javascript Untuk Copy Link -->
 <!-- Function Javascript Untuk Notif Modal Copy Link -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     function copyLink(link) {
         const el = document.createElement('textarea');
@@ -197,13 +198,10 @@
         document.body.removeChild(el);
         
         // Show modal
-        const modal = document.getElementById('modal');
-        modal.classList.remove('hidden');
-    }
-
-    function closeModal() {
-        // Close modal
-        const modal = document.getElementById('modal');
-        modal.classList.add('hidden');
+        Swal.fire(
+          'Link Tercopy!',
+          'Klik Close!',
+          'success'
+        )
     }
 </script>

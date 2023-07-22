@@ -39,7 +39,7 @@
                                 <td class="px-4 py-2 dark:text-white text-black"><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
                                 <td class="px-4 py-2 dark:text-white text-black">
                                     <a href="/edit/{{ $post->id }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</a>
-                                    <form action="/delete/{{ $post->id }}" method="post" onsubmit="return confirm('Are you sure?');">
+                                    <form action="/delete/{{ $post->id }}" method="post" onsubmit="confirmDelete(event)">
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-5 rounded mt-2">Delete</button>
@@ -57,3 +57,24 @@
         </div>
     </div>
 </x-app-layout>
+<!-- Script SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function confirmDelete(event) {
+        event.preventDefault(); // Prevent form submission
+
+        Swal.fire({
+            title: 'Yakin nggak nich mau dihapus?',
+            showDenyButton: true,
+            confirmButtonText: 'Hapus',
+            denyButtonText: "Jangan!",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                event.target.submit(); // Submit the form
+            } else if (result.isDenied) {
+                Swal.fire('Nahkan ngga jadi!');
+            }
+        });
+    }
+</script>
+

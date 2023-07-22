@@ -6,27 +6,35 @@ use App\Http\Controllers\ProfileController;
 use App\Models\Post;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\AboutController;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
+// Route melihat PDF
+Route::get('/documents/{filename}', function ($filename) {
+    $path = public_path('documents/' . $filename);
+
+    if (file_exists($path)) {
+        return response()->file($path, [
+            'Content-Type' => 'application/pdf',
+        ]);
+    }
+
+    abort(404);
+});
+
+// Route Komentar
 Route::resource('comments', CommentController::class);
-Route::get('/post/{id}', [PostController::class, 'show'])->name('post.show');
+
+//Route::get('/post/{id}', [PostController::class, 'show'])->name('post.show');
+
+// Route Page About
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 
-// route buat nampilin judul di halaman depan
+// Route Tampilan Konten Blog & Pagination
 Route::get('/', function () {
     $posts= Post::paginate(6);
     return view('welcome', ["post"=>$posts]);
 });
 
+// Route Readmore
 Route::get('/blog/{post}', [PostController::class,'readmore'])->name('readmore');
 
 Route::get('/dashboard', [PostController::class,'index'])->middleware(['auth', 'verified'])->name('dashboard');

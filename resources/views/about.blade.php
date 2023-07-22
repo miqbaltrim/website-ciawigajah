@@ -11,17 +11,21 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <!-- Icon Favicon -->
     <link rel="icon" type="image/svg+xml" href="/images/Ried-favicon.svg">
-    
+    <style>
+        .paragraph {
+            text-indent: 30px; /* Atur jumlah spasi ke dalam yang diinginkan di sini */
+        }
+    </style>
 </head>
 
 <section class="items-center py-2 bg-gray-100 font-poppins dark:bg-gray-800">
         <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
             <!-- Image Logo -->
-        <img class="w-2/3 md:w-80 z-50 mx-auto mb-8" src="{{ asset('images/Ried.svg') }}" alt="Logo Gambar"/>
+            <a href="/documents/Ried-Logo.pdf" target="_blank"><img class="w-2/3 md:w-80 z-50 mx-auto mb-8" src="{{ asset('images/Ried.svg') }}" alt="Logo Gambar"/></a>
             <div class="flex flex-wrap ">
                 <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
                     <!-- Image Header -->
-                    <img src="{{ asset('images/rangga.jpg') }}" alt=""
+                    <img src="{{ asset('images/riedgedung.jpg') }}" alt=""
                         class="relative z-40 object-cover w-full h-96 rounded-3xl">
                 </div>
                 <!-- Teks Header -->
@@ -29,9 +33,12 @@
                     <h2 class="text-5xl font-bold tracking-wide text-blue-500 dark:text-gray-300">
                         About Aplikasi
                     </h2>
-                    <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                    Website ini adalah bagian dari tugas praktek Mata Kuliah Pemprograman 
-                    Web Lanjut & Pemprograman Visual  untuk memenuhi syarat nilai Ujian Akhir Semester 6
+                    <p class="paragraph mb-2 mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
+                        Saat ini sering kali kita mendengar mengenai teknologi internet yang merupakan perkembangan terkini dari teknologi informasi. Perkembangan teknologi ini, lebih banyak berkembang kearah user friendly, yang mana berarti semakin mempermudah para pengguna dalam mengimplementasikan internet dalam berkehidupan.
+                    </p>
+                    <p class="paragraph mb-2 text-base leading-7 text-gray-500 dark:text-gray-400">
+                        Salah satu yang bisa kita akses untuk membaca berita bisa melalui Ried. Ried adalah penyedia layanan blog gratis yang bisa diakses siapa saja. Ried ini termasuk jenis blog yang sederhana dan mudah digunakan oleh user.
+                        <strong> Pada tugas akhir Mata Kuliah Pemrograman Web Lanjut dan Pemrograman Visual di semester 6 ini, kelompok kami membuat blogspot dengan nama aplikasi Ried.</strong> Aplikasi ini berita yang bertujuan untuk bisa mengakses dan mengupload berita sekaligus memberikan komentar secara langsung.
                     </p>
                 </div>
             </div>
@@ -66,66 +73,80 @@
 
 
             <!-- Dokumentasi -->
-            <div class="w-full mx-auto lg:max-w-3xl ">
-            <h1 class="ml-2 text-5xl font-bold tracking-wide mb-8 text-blue-500 text-center"> Dokumentasi</h1>
-                <div class="relative flex justify-between">
-                    <div class="flex flex-col items-center w-10 mr-4 md:w-24">
-                        <div>
-                            <div
-                                class="flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full dark:bg-gray-600">
-                                <div class="w-4 h-4 bg-blue-600 rounded-full dark:bg-blue-400"></div>
-                            </div>
+            <div class="min-h-screen bg-gradient-to-br ">
+                <div class="mx-auto max-w-3xl px-6 py-12 text-center ">
+                    <a href="/documents/Laporan-Jurnal-UAS.pdf" target="_blank" class="ml-2 text-5xl font-bold tracking-wide mb-8 text-blue-500 hover:underline">Dokumentasi</a>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Diskusi via Discord</h2>
+                            <img src="{{ asset('images/discord.png') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
                         </div>
-                        <div class="w-px h-full bg-blue-300 dark:bg-gray-600"></div>
-                    </div>
-                    <div>
-                        <h2
-                            class="inline-block px-4 py-2 mb-4 text-xs font-medium text-gray-100 bg-gradient-to-r from-blue-500 to-blue-900 dark:from-blue-400 dark:to-blue-500 rounded-3xl dark:text-gray-100">
-                            Before</h2>
-                        <div
-                            class="relative flex-1 mb-10 bg-white border-b-4 border-blue-200 shadow dark:border-gray-700 rounded-3xl dark:bg-gray-900">
-                            <div class="relative z-20 p-6">
-                                <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">Tampilan Beranda</p>
-                                <img src="{{ asset('images/test1.png') }}" alt="Launch Project" class="mb-2 w-full rounded-lg">
-                            </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Diskusi via Offline</h2>
+                            <img src="{{ asset('images/offline.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
                         </div>
+
+                        <!-- Beranda -->
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Beranda Before</h2>
+                            <img src="{{ asset('images/Beranda-1.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Beranda After</h2>
+                            <img src="{{ asset('images/Beranda-3.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Beranda Before</h2>
+                            <img src="{{ asset('images/Beranda-2.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Beranda After</h2>
+                            <img src="{{ asset('images/Beranda-4.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        
+                        <!-- Readmore -->
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Readmore Before</h2>
+                            <img src="{{ asset('images/readmore-1.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Readmore After</h2>
+                            <img src="{{ asset('images/readmore-2.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+
+                        <!-- Login -->
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Login Before</h2>
+                            <img src="{{ asset('images/login-1.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Login After</h2>
+                            <img src="{{ asset('images/login-2.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        
+                        <!-- Dashboard -->
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Dashboard Before</h2>
+                            <img src="{{ asset('images/dashboard-1.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Tampilan Dashboard After</h2>
+                            <img src="{{ asset('images/dashboard-2.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        
+                        <!-- Database -->
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Relasi Database</h2>
+                            <img src="{{ asset('images/database-1.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h2 class="text-xl font-bold text-purple-900 mb-4">Relasi Database</h2>
+                            <img src="{{ asset('images/database-2.jpg') }}" alt="" class="relative z-40 object-cover w-full h-95 rounded-xl">
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="relative flex justify-between">
-                    <div class="flex flex-col items-center w-10 mr-4 md:w-24">
-                        <div>
-                            <div
-                                class="flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full dark:bg-gray-600">
-                                <div class="w-4 h-4 bg-blue-600 rounded-full dark:bg-blue-400"></div>
-                            </div>
-                        </div>
-                        <div class="w-px h-full bg-blue-300 dark:bg-gray-600"></div>
-                    </div>
-                    <div>
-                        <h2
-                            class="inline-block px-4 py-2 mb-4 text-xs font-medium text-gray-100 bg-gradient-to-r from-blue-500 to-blue-900 dark:from-blue-400 dark:to-blue-500 rounded-3xl dark:text-gray-100">
-                            After</h2>
-                        <div
-                            class="relative flex-1 mb-10 bg-white border-b-4 border-blue-200 shadow dark:border-gray-700 rounded-3xl dark:bg-gray-900">
-                            <div class="relative z-20 p-6">
-                                <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">Diskusi Discord</p>
-                                <img src="{{ asset('images/test1.png') }}" alt="Launch Project" class="mb-2 w-full rounded-lg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative flex justify-between">
-                    <div class="flex flex-col items-center w-10 mr-4 md:w-24">
-                        <div>
-                            <div
-                                class="flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full dark:bg-gray-600">
-                                <div class="w-4 h-4 bg-blue-600 rounded-full dark:bg-blue-400"></div>
-                            </div>
-                        </div>
-                        <div class="w-px h-full bg-blue-300 dark:bg-gray-600"></div>
-                    </div>
-                    
-                </div>
+            </div>
             </div>
         </div>
     </section>
