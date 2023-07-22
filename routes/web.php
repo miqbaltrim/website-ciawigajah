@@ -30,7 +30,7 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 // Route Tampilan Konten Blog & Pagination
 Route::get('/', function () {
-    $posts= Post::paginate(6);
+    $posts = Post::orderByDesc('created_at')->paginate(6);
     return view('welcome', ["post"=>$posts]);
 });
 
