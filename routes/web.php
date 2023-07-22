@@ -20,6 +20,8 @@ Route::get('/documents/{filename}', function ($filename) {
     abort(404);
 });
 
+Route::view('/404', 'errors.404')->name('error.404');
+
 // Route Komentar
 Route::resource('comments', CommentController::class);
 
