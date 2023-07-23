@@ -30,24 +30,31 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @php
+                                $index = ($posts->currentPage() - 1) * $posts->perPage() + 1;
+                            @endphp
                             @foreach ($posts as $post)
-                            <tr>
-                                <td class="px-4 py-2 dark:text-white text-black">{{ $post->id }}</td>
-                                <td class="px-4 py-2 dark:text-white text-black">{{ $post->title }}</td>
-                                <td class="px-4 py-2 dark:text-white text-black">{{ $post->author }}</td>
-                                <td class="px-4 py-2 dark:text-white text-black">{{ Str::limit($post->body, 100) }}</td>
-                                <td class="px-4 py-2 dark:text-white text-black"><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
-                                <td class="px-4 py-2 dark:text-white text-black">
-                                    <a href="/edit/{{ $post->id }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</a>
-                                    <form action="/delete/{{ $post->id }}" method="post" onsubmit="confirmDelete(event)">
-                                        @csrf
-                                        @method('delete')
-                                        <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-5 rounded mt-2">Delete</button>
-                                    </form>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="px-4 py-2 dark:text-white text-black">{{ $index }}</td>
+                                    <td class="px-4 py-2 dark:text-white text-black">{{ $post->title }}</td>
+                                    <td class="px-4 py-2 dark:text-white text-black">{{ $post->author }}</td>
+                                    <td class="px-4 py-2 dark:text-white text-black">{{ Str::limit($post->body, 100) }}</td>
+                                    <td class="px-4 py-2 dark:text-white text-black"><img src="cover/{{ $post->cover }}" class="img-responsive" style="max-height:100px; max-width:100px" alt="" srcset=""></td>
+                                    <td class="px-4 py-2 dark:text-white text-black">
+                                        <a href="/edit/{{ $post->id }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</a>
+                                        <form action="/delete/{{ $post->id }}" method="post" onsubmit="confirmDelete(event)">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-5 rounded mt-2">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @php
+                                    $index++;
+                                @endphp
                             @endforeach
                         </tbody>
+                        
                     </table>
                 </div>
                 <div class=" flex justify-center">
