@@ -87,7 +87,7 @@
                             <div class="text-center">
                                 <img class="w-2/3 md:w-1/2 z-50 mx-auto mb-8" src="{{ asset('images/Ried.svg') }}" alt="Logo Gambar"/>
                                 <p>
-                                    Berita <span class="text-red-500 animate-pulse ">Terhott!!!</span>
+                                    Baca Berita <span class="text-red-500 animate-pulse ">Terhott!!!</span>
                                 </p>
                             </div>
                         </div>
