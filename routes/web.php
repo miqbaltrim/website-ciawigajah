@@ -6,6 +6,8 @@ use App\Http\Controllers\ProfileController;
 use App\Models\Post;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\TamanController;
+use App\Http\Controllers\BanksampahController;
 
 // Route melihat PDF
 Route::get('/documents/{filename}', function ($filename) {
@@ -19,6 +21,10 @@ Route::get('/documents/{filename}', function ($filename) {
 
     abort(404);
 });
+
+Route::get('/taman', [TamanController::class, 'index']);
+
+Route::get('/banksampah', [BanksampahController::class, 'index']);
 
 Route::view('/404', 'errors.404')->name('error.404');
 

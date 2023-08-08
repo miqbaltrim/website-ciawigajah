@@ -4,231 +4,199 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Baca RIED</title>
+        <title>Ciawi Gajah</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-        <!-- Style Marque Top -->
-        <style>
-            
-        </style>
-
-
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-            @keyframes marquee {
-                0% {
-                    transform: translateX(100%);
-                }
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
-            /*Animasi CSS Marque*/
-            .animate-marquee {
-                display: inline-block;
-                white-space: nowrap;
-                animation: marquee 10s linear infinite;
-                animation-delay: calc(0.6s * (var(--i) - 1))
-            }
-            
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-
-            @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
-
-            .font-family-karla {
-                font-family: karla;
-            }        
-        </style>
 
         <!-- Tailwind -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 
         <!-- Icon Favicon -->
-        <link rel="icon" type="image/svg+xml" href="/images/Ried-favicon.svg">
-
-    <body class="antialiased">
-
-            <!-- Start Top Bar Nav -->
-            <nav class="w-full py-3 bg-blue-800 shadow fixed top-0 left-0 right-0 z-50">
-                <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
-                    <!-- Start Code Marque -->
-                    <div class="overflow-hidden font-bold text-sm text-white w-full">
-                        <marquee behavior="scroll" direction="left">
-                            @foreach($post as $item)
-                                {{$item->title}} |
-                            @endforeach
-                        </marquee>
-                    </div>
-                    <!-- Start Code Marque -->
-                </div>
-            </nav>
-            <!-- End Top Bar Nav -->
-
-
-            <!-- Start Text Header -->
-            <header class="w-full container mx-auto h-85 bg-no-repeat" style="background-image: url('/images/image-6.jpg');">
-                <div class="flex-col items-center mt-12 py-0">
-                    <img class="w-full md:w-1/2 z-50 mx-auto" src="{{ asset('images/image-1.png') }}" alt="Nama Gambar"/>
-                </div>
-            </header>
-            <!-- End Text Header -->
-
-
-                <!-- Start Tampilan Berita -->
-                <section>
-                    <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-                        <div class="flex justify-center ml-2 text-5xl font-bold tracking-wide text-gray-800">
-                            <!-- Logo & Teks -->
-                            <div class="text-center">
-                                <img class="w-2/3 md:w-1/2 z-50 mx-auto mb-8" src="{{ asset('images/Ried.svg') }}" alt="Logo Gambar"/>
-                                <p>
-                                    Baca Berita <span class="text-red-500 animate-pulse ">Terhott!!!</span>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Konten Berita -->
-                        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
-                            @foreach($post as $item)
-                            <div class="p-6">
-                                
-                                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="{{asset('cover/'.$item->cover)}}" alt="blog">
-                                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{{$item->title}}</h1>
-                                <p class="mx-auto text-base leading-relaxed text-gray-500">
-                                {{ Str::limit($item->body, 250) }} <a href="{{'/blog/'.$item->id}}" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a></p>                
-                            
-                            </div>
-                            @endforeach
-                            </div>
-                            
-
-                            <!-- Pagination -->
-                            <div class="flex justify-end ml-2 text-xl font-bold tracking-wide text-gray-800">
-                                <p>Cari Berita Lainnya</p>
-                            </div>
-                            
-                            <div class="mt-2">
-                                {{ $post->onEachSide(1)->links('pagination::tailwind') }}
-                            </div>
-                            <!-- Pagination -->
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Fitur Our Team -->
-                <div class="flex justify-center ml-2 text-5xl font-bold tracking-wide text-gray-800">
-                    <p>Our Team</p>
-                </div>
-                <!-- Konten -->
-                <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-                    <div class="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-5">
-                        <!-- Muhammad Iqbal Tri Mulyono-->
-                        <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center transform transition-transform duration-300 hover:scale-110"
-                            style="height: 450px; background-image:url('/images/iqbal.jpg');">
-                            <div class="relative w-full h-64" >
-                                <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                    <p class="text-white text-lg font-bold text-center mt-40">Muhammad Iqbal Tri Mulyono<br>200511153</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Rangga Arisandi-->
-                        <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center transform transition-transform duration-300 hover:scale-110"
-                            style="height: 450px; background-image:url('/images/rangga.jpg');">
-                            <div class="relative w-full h-64">
-                                <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                    <p class="text-white text-lg font-bold text-center mt-40">Rangga Arisandi<br>200511150</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Elsa Herdiyanti-->
-                        <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center transform transition-transform duration-300 hover:scale-110"
-                            style="height: 450px; background-image:url('/images/elsa.jpg');">
-                            <div class="relative w-full h-64">
-                                <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                    <p class="text-white text-lg font-bold text-center mt-40">Elsa Hardiyanti<br>200511160</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Dian Meliani-->
-                        <div class="relative w-full flex items-end justify-start text-left bg-cover bg-center transform transition-transform duration-300 hover:scale-110"
-                            style="height: 450px; background-image:url('/images/dian.jpg');">
-                            <div class="relative w-full h-64">
-                                <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent to-blue-800 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                    <p class="text-white text-lg font-bold text-center mt-40">Dian Meliani<br>190511150</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         
-    <!-- Start Footer -->
-    <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-    <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="sm:col-span-2">
-        <a href="/" aria-label="Go home" title="Tugas Ujian Akhir Semester" class="inline-flex items-center">
-            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Tugas Ujian Akhir Semester</span>
-        </a>
-        <div class="mt-6 lg:max-w-sm">
-            <p class="text-sm text-gray-800">
-            Website ini adalah bagian dari tugas praktek Mata Kuliah Pemprograman Web Lanjut & Pemprograman Visual  untuk memenuhi syarat nilai Ujian Akhir Semester 6 
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<body>
+    @include('header')
+    
+    <!-- Header Start -->
+    <header class="w-full container mx-auto h-85 bg-no-repeat">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-85">
+                        <img class="relative z-40 object-cover w-full h-95 rounded-3xl" src="/images/ciawigajah1.jpg" alt="Nama Gambar" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-85">
+                        <img class="relative z-40 object-cover w-full h-95 rounded-3xl" src="/images/ciawigajah2.jpg" alt="Nama Gambar" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-85">
+                        <img class="relative z-40 object-cover w-full h-95 rounded-3xl" src="/images/ciawigajah3.jpg" alt="Nama Gambar" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center h-85">
+                        <img class="relative z-40 object-cover w-full h-95 rounded-3xl" src="/images/ciawigajah4.jpg" alt="Nama Gambar" />
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak gambar di sini -->
+            </div>
+            {{-- <div class="swiper-pagination"></div> --}}
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Teks Start -->
+    <div class="max-w-5xl mx-auto mt-12 px-4 text-center">
+        <div class="w-full max-w-3xl mx-auto">
+            <h1 class="text-4xl font-bold mt-2 mb-6">Kenalan yuk dengan<br>Desa Ciawi Gajah, Beber</h1>
+            <p class="px-4 leading-relaxed">Desa Ciawi Gajah berada di Kecamatan Beber, Kabupaten Cirebon, Jawa Barat. Desa Ciawi Gajah memiliki banyak potensi wisata alam dan budaya yang menarik untuk dikembangkan. Bank Sampah, sebuah usaha warga untuk mengelola sampah dengan cara yang ramah lingkungan, adalah salah satu kemungkinan. Sangat penting untuk membuat masyarakat di luar desa tahu tentang kawasan eduwisata Bank Sampah. Oleh karena itu, proposal ini berfokus pada penggunaan blog sebagai alat untuk menyebarkan informasi tentang Kawasan Eduwisata Bank Sampah di Desa Ciawi Gajah.
             </p>
         </div>
-        </div>
-        <div class="space-y-2 text-sm">
-        <p class="text-base font-bold tracking-wide text-gray-900">Nama Kelompok - NIM</p>
-        <div class="flex">
-            <a href="/" title="Muhammad Iqbal Tri Mulyono" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">Muhammad Iqbal Tri Mulyono - 200511153</a>
-        </div>
-        <div class="flex">
-            <a href="/" title="Rangga Arisandi" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">Rangga Arisandi - 200511150</a>
-        </div>
-        <div class="flex">
-            <a href="/"  title="Elsa Hardiyanti" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">Elsa  Hardiyanti - 200511160</a>
-        </div>
-        <div class="flex">
-            <a href="/"  title="Dian Meliani" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">Dian Meliani - 190511150</a>
-        </div>
-        </div>
-        <div>
-        <span class="text-base font-bold tracking-wide text-gray-900">Our Project</span>
-        <div class="flex items-center mt-1 space-x-3">
-            <a href="https://github.com/rakun17/tugas-uas" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
-            <!-- Github -->
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24">
-                <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                </svg>
-            </a>
-        </div>
-        <p class="mt-4 text-sm text-gray-500">
-            Dapatkan source code kami untuk belajar yaaaa...
-        </p>
-        </div>
     </div>
-    <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-        <p class="text-sm text-gray-600">
-        © Copyright 2023 K1 Teknik Informatika (Kelompok 4)
-        </p>
-        <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-        <li>
-            <a href="/" class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Universitas Muhammadiyah Cirebon</a>
-        </li>
-        </ul>
-    </div>
-    </div>
-    <!-- End Footer -->
+    <!-- Teks End -->
 
-    </body>
+    <!-- Konten Sarongge Start -->
+    <section class="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+            class="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
+            <div class="sm:text-center lg:text-left">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
+                    <span class="block xl:inline">Galery</span>
+                    <span class="block text-indigo-600 xl:inline">Taman Sarongge</span>
+                </h1>
+                <p
+                    class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+                    fugiat veniam occaecat fugiat aliqua.
+                </p>
+                <!-- Button Section -->
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <div class="rounded-md shadow">
+                        <a href="#"
+                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10">
+                            Lihat Selengkapnya
+                        </a>
+                    </div>
+                </div>
+                <!-- End of Button Section -->
+            </div>
+    
+            <!--   Image Section     -->
+            <div class="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/images/ciawigajah2.jpg" alt="">
+            </div>
+            <!--   End of Image Section     -->
+        </div>
+    </section>
+    <!-- Konten Sarongge End -->
+
+    <!-- Konten Sampah Start -->
+    <section class="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col-reverse lg:flex-row">
+            <!--   Image Section     -->
+            <div class="lg:inset-y-0 lg:left-0 lg:w-1/2 my-4">
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/images/tamansarongge.jpg" alt="">
+            </div>
+            <!--   End of Image Section     -->
+    
+            <div class="sm:text-center lg:text-right lg:ml-auto">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
+                    <span class="block xl:inline">Gallery</span>
+                    <span class="block text-indigo-600 xl:inline">Bank Sampah</span>
+                </h1>
+                <p class="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg-right sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                </p>
+                <!-- Button Section -->
+                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
+                    <div class="rounded-md shadow">
+                        <a href="#"
+                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10">
+                            Lihat Selengkapnya
+                        </a>
+                    </div>
+                </div>
+                <!-- End of Button Section -->
+            </div>
+        </div>
+    </section>
+    <!-- Konten Sampah End -->
+
+    <!-- Artikel Start -->
+    <div class="w-full max-w-3xl mx-auto text-center mt-6">
+        <h1 class="text-4xl font-bold mt-2 mb-6">Artikel Desa</h1>
+    </div>
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Konten Berita -->
+        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+            @foreach($post as $item)
+            <div class="p-6 hover:bg-gray-100 rounded-xl transition duration-300 ease-in-out">
+                <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="{{asset('cover/'.$item->cover)}}" alt="blog">
+                <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">{{ Str::limit($item->title, 20) }}</h1>
+                <p class="mx-auto text-base leading-relaxed text-gray-500">
+                    {{ Str::limit($item->body, 250) }} <a href="{{'/blog/'.$item->id}}" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                </p>                
+            </div>
+            @endforeach
+        </div>
+    
+        <!-- Pagination -->
+        <div class="flex justify-end mt-8 text-xl font-bold tracking-wide text-gray-800">
+            <p>Cari Berita Lainnya</p>
+        </div>
+            
+        <div >
+            {{ $post->onEachSide(1)->links('pagination::tailwind') }}
+        </div>
+        <!-- Pagination -->
+    </div>
+    <!-- Artikel End -->
+    
+    <!-- Support Start -->
+    <div class="flex max-w-md lg:max-w-3xl w-auto mx-auto flex-wrap items-center justify-center lg:justify-between px-5 mt-8 ">
+        <div class="w-full max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mt-2 mb-6">Support By</h1>
+        </div>
+        <div class="m-4 lg:mx-0 w-28 flex items-center justify-center">
+            <img src="/images/umc1.png" alt="UMC" width="81" height="25">
+        </div>
+        <div class="m-4 lg:mx-0 w-28 flex items-center justify-center">
+            <img src="/images/kampusmerdeka.png" alt="Kampus Merdeka" width="97" height="32">
+        </div>
+        <div class="m-4 lg:mx-0 w-28 flex items-center justify-center">
+            <img src="/images/kelompok27.png" alt="Kelompok 27" width="81" height="25">
+        </div>
+    </div>
+    <!-- Support End -->
+    
+    <!-- Footer Start -->
+    @include('footer')
+    <!-- Footer End -->
+    
+
+    
+    
+    
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Waktu delay dalam milidetik (3 detik)
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
 </html>
