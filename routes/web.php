@@ -26,6 +26,7 @@ Route::get('/taman', [TamanController::class, 'index']);
 
 Route::get('/banksampah', [BanksampahController::class, 'index']);
 
+
 Route::view('/404', 'errors.404')->name('error.404');
 
 // Route Komentar
@@ -68,3 +69,4 @@ Route::get('/create',function(){
 
     
 require __DIR__.'/auth.php';
+

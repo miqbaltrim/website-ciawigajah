@@ -1,6 +1,5 @@
 <?php
 
-// app/Http/Controllers/BanksampahController.php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;

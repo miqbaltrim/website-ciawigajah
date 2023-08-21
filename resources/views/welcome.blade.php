@@ -16,7 +16,8 @@
         <!-- Icon Favicon -->
         
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<body>
+
+        
     @include('header')
     
     <!-- Header Start -->
@@ -54,8 +55,8 @@
     <div class="max-w-5xl mx-auto mt-12 px-4 text-center">
         <div class="w-full max-w-3xl mx-auto">
             <h1 class="text-4xl font-bold mt-2 mb-6">Kenalan yuk dengan<br>Desa Ciawi Gajah, Beber</h1>
-            <p class="px-4 leading-relaxed">Desa Ciawi Gajah berada di Kecamatan Beber, Kabupaten Cirebon, Jawa Barat. Desa Ciawi Gajah memiliki banyak potensi wisata alam dan budaya yang menarik untuk dikembangkan. Bank Sampah, sebuah usaha warga untuk mengelola sampah dengan cara yang ramah lingkungan, adalah salah satu kemungkinan. Sangat penting untuk membuat masyarakat di luar desa tahu tentang kawasan eduwisata Bank Sampah. Oleh karena itu, proposal ini berfokus pada penggunaan blog sebagai alat untuk menyebarkan informasi tentang Kawasan Eduwisata Bank Sampah di Desa Ciawi Gajah.
-            </p>
+            <p class="px-4 leading-relaxed">
+            Desa Ciawi Gajah terletak di Kecamatan Beber, Kabupaten Cirebon, Jawa Barat, dengan pesona alam dan warisan budaya yang kaya, menawarkan beragam potensi wisata yang menarik untuk dikelola dan dikembangkan. Salah satu inisiatif yang luar biasa adalah pendirian Bank Sampah, sebuah upaya kolaboratif masyarakat dalam mengelola limbah secara berkelanjutan dan ramah lingkungan. Dalam upaya untuk memperluas dampak positifnya, sangat penting bagi kami untuk menginformasikan kepada masyarakat di luar wilayah desa tentang keberadaan Kawasan Eduwisata Bank Sampah yang unik ini. Dengan demikian, kami mengusulkan penggunaan platform blog sebagai sarana efektif dalam menyebarkan informasi serta mempromosikan pesona Kawasan Eduwisata Bank Sampah di Desa Ciawi Gajah kepada khalayak yang lebih luas.
         </div>
     </div>
     <!-- Teks End -->
@@ -71,13 +72,12 @@
                 </h1>
                 <p
                     class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                    fugiat veniam occaecat fugiat aliqua.
+                    Taman Sarongge, daya tarik di Desa Ciawi Gajah, tawarkan alam menakjubkan, tempat santai di tengah pepohonan hijau, bermain, jogging, dan pemandangan menawan. Destinasi unik yang mencerminkan kekayaan alam serta upaya pelestariannya. Jangan lewatkan foto-foto menarik untuk media sosial!
                 </p>
                 <!-- Button Section -->
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div class="rounded-md shadow">
-                        <a href="#"
+                        <a href="/taman"
                             class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10">
                             Lihat Selengkapnya
                         </a>
@@ -110,12 +110,12 @@
                     <span class="block text-indigo-600 xl:inline">Bank Sampah</span>
                 </h1>
                 <p class="mt-6 text-base text-gray-500 sm:mt-5 sm:text-lg-right sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                Kawasan Bank Sampah Desa Ciawi Gajah: Eduwisata inspiratif tentang pengelolaan sampah bertanggung jawab. Program pelatihan, tur, dan lokakarya mengungkapkan pentingnya daur ulang dan dampak positifnya bagi lingkungan.
                 </p>
                 <!-- Button Section -->
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
                     <div class="rounded-md shadow">
-                        <a href="#"
+                        <a href="/banksampah"
                             class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-600 md:py-4 md:text-lg md:px-10">
                             Lihat Selengkapnya
                         </a>
@@ -196,6 +196,7 @@
                 clickable: true,
             },
         });
+
     </script>
 </body>
 

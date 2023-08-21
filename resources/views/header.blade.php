@@ -16,8 +16,8 @@
             <ul class="flex space-x-4 text-white">
                 <li><a href="/" class="hover:text-blue-300">Home</a></li>
                 <li><a href="/taman" class="hover:text-blue-300">Taman Sarongge</a></li>
-                <li><a href="#" class="hover:text-blue-300">Bank Sampah</a></li>
-                <li><a href="#" class="hover:text-blue-300">About Us</a></li>
+                <li><a href="/banksampah" class="hover:text-blue-300">Bank Sampah</a></li>
+                <li><a href="#" class="hover:text-blue-300">Tiket</a></li>
             </ul>
             <!-- Daftar Menu -->
         </div>
